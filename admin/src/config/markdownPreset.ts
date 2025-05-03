@@ -28,7 +28,7 @@ import {
 } from 'ckeditor5';
 
 import type { Preset, EditorConfig } from './types';
-import { StrapiMediaLib, StrapiUploadAdapter } from '../plugins';
+import { StrapiMediaLib, StrapiUploadAdapter, InsertNavigationBtn } from '../plugins';
 
 const editorConfig: EditorConfig = {
   licenseKey: 'GPL',
@@ -62,6 +62,7 @@ const editorConfig: EditorConfig = {
 
     StrapiMediaLib,
     StrapiUploadAdapter,
+    InsertNavigationBtn,
   ],
   toolbar: [
     'sourceEditing',
@@ -79,6 +80,7 @@ const editorConfig: EditorConfig = {
     'link',
     'insertImage',
     'strapiMediaLib',
+    'insertNavigation',
     'blockQuote',
     'insertTable',
     'codeBlock',
@@ -148,5 +150,5 @@ const editorConfig: EditorConfig = {
 export const defaultMarkdownPreset: Preset = {
   name: 'defaultMarkdown',
   description: 'Default Markdown editor',
-  editorConfig,
+  editorConfig: {},
 };

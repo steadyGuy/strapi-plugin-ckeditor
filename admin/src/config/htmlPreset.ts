@@ -58,7 +58,7 @@ import {
 import * as sanitizeHtml from 'sanitize-html';
 
 import type { Preset, EditorConfig } from './types';
-import { StrapiMediaLib, StrapiUploadAdapter } from '../plugins';
+import { StrapiMediaLib, StrapiUploadAdapter, InsertNavigationBtn } from '../plugins';
 
 const editorConfig: EditorConfig = {
   licenseKey: 'GPL',
@@ -120,6 +120,7 @@ const editorConfig: EditorConfig = {
 
     StrapiMediaLib,
     StrapiUploadAdapter,
+    InsertNavigationBtn,
   ],
   toolbar: [
     'showBlocks',
@@ -140,6 +141,7 @@ const editorConfig: EditorConfig = {
     'link',
     'mediaEmbed',
     'insertImage',
+    'insertNavigation',
     'strapiMediaLib',
     'blockquote',
     'insertTable',
